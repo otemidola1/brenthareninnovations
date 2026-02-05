@@ -1,0 +1,273 @@
+# Product Requirements Document (PRD)
+
+## Product Name
+
+**Brentharen Innovations**
+
+## Organization
+
+**Brentharen Innovations**
+**Location:** 451, Oluwadamilola Fasade
+
+---
+
+## 1. Purpose & Vision
+
+The purpose of this product is to design and build a modern, reliable, and user-friendly guesthouse reservation website for Brentharen Innovations. The platform will allow guests to seamlessly discover rooms, make reservations, and manage bookings online, while providing administrators with robust tools to manage rooms, guests, reservations, and business operations.
+
+**Vision Statement:**
+To become a trusted digital reservation system that simplifies guesthouse operations and delivers a smooth booking experience for guests, aligned with Brentharen Innovations’ modern and innovative brand identity.
+
+---
+
+## 2. Goals & Objectives
+
+### Business Goals
+
+* Increase room occupancy through online visibility and easy booking
+* Reduce manual reservation handling
+* Centralize guest and booking data
+* Strengthen Brentharen Innovations’ digital presence
+
+### User Goals
+
+* Guests can quickly find available rooms and book with confidence
+* Admins can efficiently manage reservations, guests, and rooms
+* Secure, reliable, and transparent booking process
+
+---
+
+## 3. Target Users
+
+### 3.1 Guest Users
+
+* Travelers looking for short-term accommodation
+* Business visitors
+* Families or individuals booking rooms online
+
+### 3.2 Admin Users
+
+* Guesthouse managers
+* Front-desk staff
+* Brentharen Innovations administrators
+
+---
+
+## 4. Assumptions & Constraints
+
+### Assumptions
+
+* Users have basic internet access via mobile or desktop
+* Online payments may be added later (initial version may support manual payment confirmation)
+
+### Constraints
+
+* Must align with Brentharen Innovations branding
+* Must be mobile-responsive
+* Initial release focuses on core reservation functionality
+
+---
+
+## 5. Functional Requirements
+
+### 5.1 Guest-Facing Features
+
+#### 5.1.1 Homepage
+
+* Overview of the guesthouse
+* High-quality images of rooms
+* Call-to-action buttons ("Book Now")
+* Brand color accents using **lemon green**
+
+#### 5.1.2 Room Listings
+
+* Display available room types
+* Room details:
+
+  * Price per night
+  * Room capacity
+  * Amenities
+  * Photos
+
+#### 5.1.3 Availability Search
+
+* Date-based availability check
+* Number of guests
+* Real-time availability updates
+
+#### 5.1.4 Reservation & Booking
+
+* Select room and dates
+* Enter guest details
+* Booking summary
+* Reservation confirmation page
+* Confirmation email (optional in later phase)
+
+#### 5.1.5 Guest Account Management
+
+* Guest registration & login
+* View booking history
+* Edit personal details
+* Cancel or modify reservations (based on policy)
+
+---
+
+### 5.2 Admin Features
+
+#### 5.2.1 Admin Authentication
+
+* Secure admin login
+* Role-based access (Admin, Manager, Staff)
+
+#### 5.2.2 Dashboard
+
+* Overview metrics:
+
+  * Total bookings
+  * Occupancy rate
+  * Upcoming check-ins/check-outs
+* Quick action buttons
+
+#### 5.2.3 Room Management
+
+* Create, edit, and delete rooms
+* Set pricing
+* Upload room images
+* Mark rooms as available/unavailable
+
+#### 5.2.4 Reservation Management
+
+* View all reservations
+* Approve, modify, or cancel bookings
+* Assign rooms to reservations
+* Manual payment status tracking
+
+#### 5.2.5 Guest Management
+
+* View registered guests
+* Guest booking history
+* Contact information access
+
+#### 5.2.6 Content Management
+
+* Update homepage content
+* Manage images and descriptions
+* Update policies (check-in, cancellation, etc.)
+
+---
+
+## 6. Non-Functional Requirements
+
+### 6.1 Performance
+
+* Page load time under 3 seconds
+* Support concurrent users without degradation
+
+### 6.2 Security
+
+* Secure authentication
+* Encrypted passwords
+* Role-based admin permissions
+* Data privacy compliance
+
+### 6.3 Usability
+
+* Simple and intuitive UI
+* Clear booking steps
+* Mobile-first responsive design
+
+### 6.4 Scalability
+
+* Ability to add more rooms or properties in the future
+* Modular backend design
+
+---
+
+## 7. UI / UX & Branding Requirements
+
+### Brand Identity
+
+* Primary brand color: **Lemon Green** (used for buttons, highlights, and accents)
+* Secondary colors: White, light gray, charcoal
+* Clean, modern typography
+
+### Design Principles
+
+* Minimalist layout
+* High contrast for readability
+* Consistent branding across guest and admin views
+
+---
+
+## 8. User Flow Summary
+
+### Guest Flow
+
+1. Visit homepage
+2. Search availability
+3. View room details
+4. Select room and dates
+5. Enter personal details
+6. Confirm reservation
+
+### Admin Flow
+
+1. Login to admin panel
+2. View dashboard
+3. Manage rooms or reservations
+4. Update guest or booking details
+5. Logout securely
+
+---
+
+## 9. Data Requirements
+
+### Core Entities
+
+* Users (Guests, Admins)
+* Rooms
+* Reservations
+* Payments (future enhancement)
+
+### Key Fields
+
+* Guest: Name, Email, Phone
+* Room: Type, Price, Capacity, Status
+* Reservation: Dates, Room ID, Guest ID, Status
+
+---
+
+## 10. Success Metrics (KPIs)
+
+* Increase in online bookings
+* Reduced manual booking errors
+* Admin task completion time
+* Guest satisfaction and repeat bookings
+
+---
+
+## 11. Risks & Mitigation
+
+| Risk           | Mitigation                      |
+| -------------- | ------------------------------- |
+| Double booking | Real-time availability checks   |
+| Admin misuse   | Role-based permissions          |
+| Poor UX        | Usability testing before launch |
+
+---
+
+## 12. Future Enhancements
+
+* Online payment integration
+* Multi-property support
+* Promo codes and discounts
+* Guest reviews and ratings
+* Analytics and reporting tools
+
+---
+
+## 13. Approval
+
+**Prepared for:** Brentharen Innovations
+**Location:** 451, Oluwadamilola Fasade
+**Document Type:** Full Product Requirements Document
