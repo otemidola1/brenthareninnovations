@@ -15,7 +15,39 @@ async function main() {
             role: 'ADMIN',
         },
     })
-    console.log({ admin })
+
+    // Seed Rooms
+    const rooms = [
+        {
+            name: 'Deluxe Single Room',
+            type: 'Single',
+            price: 15000,
+            description: 'A cozy room perfect for solo travelers, featuring a queen-sized bed and modern amenities.',
+            isAvailable: true
+        },
+        {
+            name: 'Executive Double Room',
+            type: 'Double',
+            price: 25000,
+            description: 'Spacious room with a king-sized bed, sitting area, and city view.',
+            isAvailable: true
+        },
+        {
+            name: 'Presidential Suite',
+            type: 'Suite',
+            price: 50000,
+            description: 'The ultimate luxury experience with a separate living room, kitchenette, and panoramic views.',
+            isAvailable: true
+        }
+    ]
+
+    for (const room of rooms) {
+        await prisma.room.create({
+            data: room
+        })
+    }
+
+    console.log({ admin, roomsCreated: rooms.length })
 }
 main()
     .then(async () => {

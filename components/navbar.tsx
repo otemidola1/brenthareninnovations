@@ -32,8 +32,10 @@ export async function Navbar() {
                                         className="h-full w-full object-cover"
                                     />
                                 </div>
-                                {session.user?.role === 'ADMIN' && (
+                                {session.user?.role === 'ADMIN' ? (
                                     <Link href="/admin" className="text-gray-500 hover:text-gray-700 font-medium text-sm">Dashboard</Link>
+                                ) : (
+                                    <Link href="/guest" className="text-gray-500 hover:text-gray-700 font-medium text-sm">My Bookings</Link>
                                 )}
                                 <Link href={session.user?.role === 'ADMIN' ? "/admin/settings" : "/guest/settings"} className="text-gray-500 hover:text-gray-700 font-medium text-sm">Settings</Link>
                                 {/* Logout would be a form submission in NextAuth v5, kept simple here or improved later */}
