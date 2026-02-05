@@ -8,11 +8,12 @@ interface RoomCardProps {
 export function RoomCard({ room }: RoomCardProps) {
     return (
         <div key={room.id} className="group relative bg-white border border-gray-200 rounded-lg flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-            <div className="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-56">
-                {/* Placeholder for real image implementation */}
-                <div className="h-full w-full flex items-center justify-center bg-gray-100 text-gray-400">
-                    {room.type} Room
-                </div>
+            <div className="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-56 relative">
+                <img
+                    src={`https://placehold.co/600x400/f3f4f6/9ca3af?text=${room.type}+Room`}
+                    alt={room.name}
+                    className="h-full w-full object-cover sm:h-full sm:w-full"
+                />
             </div>
             <div className="flex-1 p-4 space-y-2 flex flex-col">
                 <h3 className="text-lg font-medium text-gray-900">
